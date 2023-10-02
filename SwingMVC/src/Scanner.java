@@ -32,7 +32,15 @@ public class Scanner {
 		  // Add UI element to frame
 		  scannerPanel.add(scanButton);
 		  frame.getContentPane().add(scannerPanel);
+		  
+		  scanButton.addActionListener(e -> generateUPC());
 	 }
+
+	private int generateUPC() {
+		int upcCode = 12345; 
+		System.out.println(upcCode);
+		return upcCode;
+	}
 
 	public JFrame getFrame() {
 		return frame;
